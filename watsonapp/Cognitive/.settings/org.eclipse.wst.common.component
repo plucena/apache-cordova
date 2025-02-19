@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Cognitive">
+        <wb-resource deploy-path="/" source-path="/apps/Cognitive/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/Cognitive/android"/>
+        <property name="context-root" value="Cognitive"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Sat Jul 04 22:43:00 BRT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-014e-5be1-7b8f-0000103247e8 
+on database directory /Users/percival/Documents/workspace/MobileFirstServerConfig/shared/resources/derbyDB/WLADMIN  with class loader com.ibm.ws.classloading.internal.AppClassLoader@8a7e9b6 
+Loaded from null
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_45-b18
+user.dir=/Users/percival/Documents/workspace/MobileFirstServerConfig/servers/worklight
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Jul 04 22:49:18 BRT 2015:
+Shutting down instance a816c00e-014e-5be1-7b8f-0000103247e8 on database directory /Users/percival/Documents/workspace/MobileFirstServerConfig/shared/resources/derbyDB/WLADMIN with class loader com.ibm.ws.classloading.internal.AppClassLoader@8a7e9b6 
+----------------------------------------------------------------
+Sat Jul 04 22:49:18 BRT 2015: Shutting down Derby engine
+----------------------------------------------------------------

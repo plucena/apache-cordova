@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1     7/4/15 17:15:46:779 BRT     7/4/15 17:15:46:779 BRT java.lang.Error com.ibm.ws.webcontainer.servlet.ServletWrapper.init 181
+                                                                            - /Users/percival/Documents/workspace/MobileFirstServerConfig/servers/worklight/logs/ffdc/ffdc_15.07.04_17.15.46.0.log
+------+------+---------------------------+---------------------------+---------------------------

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="BookWorm">
+        <wb-resource deploy-path="/" source-path="/apps/BookWorm/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/BookWorm/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/BookWorm/iphone"/>
+        <property name="context-root" value="BookWorm"/>
+    </wb-module>
+</project-modules>

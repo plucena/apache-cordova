@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script>
+	// Define WL namespace.
+	var WL = WL ? WL : {};
+	/**
+	 * WLClient configuration variables.
+	 * Values are injected by the deployer that packs the gadget.
+	 */
+	WL.StaticAppProps = {
+		"APP_DISPLAY_NAME" : "Livros",
+		"APP_ID" : "Livros",
+		"APP_SERVICES_URL" : "\/apps\/services\/",
+		"APP_VERSION" : "1.2.10",
+		"ENVIRONMENT" : "ipad",
+		"LOGIN_DISPLAY_TYPE" : "embedded",
+		"WORKLIGHT_NATIVE_VERSION" : "3921556017",
+		"WORKLIGHT_PLATFORM_VERSION" : "6.1.0.01.20140418-0637",
+		"WORKLIGHT_ROOT_URL" : "\/apps\/services\/api\/Livros\/ipad\/"
+	};
+</script>
+
+<script src="worklight/cordova.js"></script>
+<script src="worklight/wljq.js"></script>
+<script src="worklight/worklight.js"></script>
+<script src="worklight/checksum.js"></script>
+<script src="js/jquery/jquery.mobile-1.4.3.js"></script>
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+
+<script src="js/jquery/jquery.mobile-1.4.3.min.js"></script>
+<!-- logica do app -->
+<link href="worklight/worklight.css" rel="stylesheet">
+<link href="js/jquery/jquery.mobile-1.4.3.min.css" rel="stylesheet">
+<script src="js/client.js"></script>
+
+<!-- logica do app -->
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+
+
+<!-- jquery automatico -->
+<!-- logica do app -->
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+</head>
+<body style="display: none;">
+		<table bgcolor="#D1D0CE" width="100%">
+			<TBODY>
+				<tr>
+					<td align="left">
+						<table width="100%">
+							<TBODY>
+								<tr>
+								<td>
+								<input align="right" id="titulo" placeHolder="title" type="text"> 
+								</td>
+								<td>
+								<input align="left" id="autor" placeHolder="author" type="text">
+								 </td>
+								</tr>
+																	</TBODY>
+						</table>
+	<table bgcolor="#D1D0CE" width="100%">
+			<TBODY>
+				<tr>
+							<td><a data-icon="search" data-role="button"
+										data-theme="a" href="#" id="gbook">Search</a></td>
+									<td><a data-icon="star" data-role="button" data-theme="a"
+										href="#" id="fav">Library</a></td>
+									<td><a data-icon="gear" data-role="button" data-theme="a"
+										href="#" id="config">&nbsp;</a></td>
+
+								</tr>
+								
+							</TBODY>
+						</table>
+					</td>
+				</tr>
+			</TBODY>
+		</table>
+		<!-- </h1>  -->
+	
+	<!--  tabela de resultados -->
+	<div id="resultado"></div>
+					
+	<!--  framework worklight -->
+	<script src="js/initOptions.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/messages.js"></script>
+	
+</body>
+</html>

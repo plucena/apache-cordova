@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script>
+	// Define WL namespace.
+	var WL = WL ? WL : {};
+	/**
+	 * WLClient configuration variables.
+	 * Values are injected by the deployer that packs the gadget.
+	 */
+	
+</script>
+
+<script src="worklight/cordova.js"></script>
+<script src="worklight/wljq.js"></script>
+<script src="worklight/worklight.js"></script>
+<script src="worklight/checksum.js"></script>
+<script src="js/jquery/jquery.mobile-1.4.3.js"></script>
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+
+<script src="js/jquery/jquery.mobile-1.4.3.min.js"></script>
+<!-- logica do app -->
+<link href="worklight/worklight.css" rel="stylesheet">
+
+<script src="js/client.js"></script>
+
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<link href="js/jquery/jquery.mobile-1.4.3.min.css" rel="stylesheet"><meta content="yes" name="apple-mobile-web-app-capable">
+
+</head>
+<body style="display: none;">
+	<div data-role="page" id="page">
+		<div data-role="header" id="header" data-position="fixed">
+			<h3>BookWorm</h3>
+		</div>
+		<div data-role="content" style="padding: 15px">
+			<div class="ui-grid-solo">
+				<BR/><BR/>
+				<div class="ui-block-a">
+					<label for="text">Login:</label><input type="text" name="user" id="user">
+				</div>
+				
+				<div class="ui-block-a">
+					<label for="text0">Password:</label><input type="password" name="password" id="password">
+				</div>
+				
+				<div class="ui-block-a">
+					<input type="button" data-role="button" id="loginBtn" data-theme="a" value="Login" >
+				</div>
+				
+				<div class="ui-block-a">
+					<input type="button" data-role="button" id="registerBtn" data-theme="a" value="Register">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--  framework worklight -->
+	<script src="js/initOptions.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/messages.js"></script>
+	
+</body>
+</html>

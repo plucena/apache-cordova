@@ -1,0 +1,66 @@
+<html>
+ <meta charset="ISO-8859-1"> 
+  <head>
+<script type="text/javascript" src="../js/jquery/jquery-2.1.4.min"></script> 
+<link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<script type="text/javascript">
+
+
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    alert("navigator.geolocation works well");
+}
+
+alert("Starting");
+
+var onSuccess = function(position) {
+    alert('Latitude: '          + position.coords.latitude          + '\n' +
+          'Longitude: '         + position.coords.longitude         + '\n' +
+          'Altitude: '          + position.coords.altitude          + '\n' +
+          'Accuracy: '          + position.coords.accuracy          + '\n' +
+          'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+          'Heading: '           + position.coords.heading           + '\n' +
+          'Speed: '             + position.coords.speed             + '\n' +
+          'Timestamp: '         + position.timestamp                + '\n');
+};
+
+// onError Callback receives a PositionError object
+//
+function onError(error) {
+    alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
+}
+
+
+function gps(){
+    alert("Hello");
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    alert("Goodbye");
+}
+
+alert("Finish");
+</script>
+
+  
+  </head>
+  <body>
+      
+      <div class="container">
+  
+
+  <div id="photo"> 
+  <BR/><BR/><BR/>
+  V4
+  </div>
+
+<BR/><BR/></BR>
+
+  <form id="newbookform" action="produto.html" method="GET">
+      <div class="form-group">
+      <button type="button" onclick="gps()">Camera</button></div>
+    </form>
+    
+  </div>  
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceDescription catalog="WSDL" id="LoginWS_login" adapter="soap" useNsPrefix="input">
+    <Name>login</Name>
+    <Description></Description>
+    <Schemas>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.unasp.com/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ws.unasp.com/" version="1.0">
+
+<xsd:element name="login" type="tns:login"/>
+
+<xsd:element name="loginResponse" type="tns:loginResponse"/>
+
+<xsd:complexType name="login">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="usuario" type="xs:string"/>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="loginResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="return" type="xs:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xs:schema>
+    </Schemas>
+    <Procedure>
+        <Input>
+            <Parameter xmlns:ns2="http://ws.unasp.com/" elementName="ns2:login" elementType="ns2:login"/>
+        </Input>
+        <Output>
+            <Parameter xmlns:ns2="http://ws.unasp.com/" elementName="ns2:loginResponse" elementType="ns2:loginResponse"/>
+        </Output>
+    </Procedure>
+    <ProviderAttributes>
+        <item>
+            <name>endpointUrl</name>
+            <value>http://192.241.171.69:8080/WS/LoginWS</value>
+        </item>
+        <item>
+            <name>bindingDescription</name>
+            <value></value>
+        </item>
+        <item>
+            <name>nsUri</name>
+            <value>http://ws.unasp.com/</value>
+        </item>
+        <item>
+            <name>soapAction</name>
+            <value></value>
+        </item>
+        <item>
+            <name>soapVersion</name>
+            <value>SOAP v1.1</value>
+        </item>
+        <item>
+            <name>bindingName</name>
+            <value>LoginWSPortBinding</value>
+        </item>
+        <item>
+            <name>portName</name>
+            <value>LoginWSPort</value>
+        </item>
+        <item>
+            <name>inputNS</name>
+            <value>xmlns:wsp=&quot;http://www.w3.org/ns/ws-policy&quot; xmlns:tns=&quot;http://ws.unasp.com/&quot; xmlns:wsp1_2=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wsam=&quot;http://www.w3.org/2007/05/addressing/metadata&quot; xmlns:wsu=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; </value>
+        </item>
+        <item>
+            <name>serviceName</name>
+            <value>LoginWS</value>
+        </item>
+    </ProviderAttributes>
+    <SystemParameters/>
+</ServiceDescription>
